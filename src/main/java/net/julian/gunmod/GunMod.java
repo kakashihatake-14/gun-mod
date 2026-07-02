@@ -2,6 +2,7 @@ package net.julian.gunmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.julian.gunmod.item.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -13,6 +14,7 @@ public class GunMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 	}
 }
