@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SHOT_GUN=registerItem("shot_gun",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GunMod.MOD_ID,"shot_gun")))));
-
+    public static final Item SHOT_GUN_BULLET=registerItem("shot_gun_bullet",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GunMod.MOD_ID,"shot_gun_bullet")))));
 
 private static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(GunMod.MOD_ID, name) , item);
@@ -23,6 +23,7 @@ private static Item registerItem(String name, Item item) {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(SHOT_GUN);
+            entries.add(SHOT_GUN_BULLET);
         });
     }
 }
