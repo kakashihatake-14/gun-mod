@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "gun-mod:item/shot_gun_bullet"
+  }
+}
