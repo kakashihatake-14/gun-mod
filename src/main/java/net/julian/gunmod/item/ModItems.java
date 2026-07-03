@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item PINK_GARNET=registerItem("pink_garnet",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GunMod.MOD_ID,"pink_garnet")))));
+    public static final Item SHOT_GUN=registerItem("shot_gun",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GunMod.MOD_ID,"shot_gun")))));
 
 
 private static Item registerItem(String name, Item item) {
@@ -22,7 +22,7 @@ private static Item registerItem(String name, Item item) {
         GunMod.LOGGER.info("Registering Mod Items for " + GunMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(PINK_GARNET);
+            entries.add(SHOT_GUN);
         });
     }
 }
