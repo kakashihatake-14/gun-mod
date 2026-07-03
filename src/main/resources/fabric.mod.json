@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Guns-By-kakashihatake-14/Fabric-Guns-1.21.X"
 	},
 	"license": "MIT",
-	"icon": "assets/gun-mod/icon.png",
+	"icon": "assets/gunmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

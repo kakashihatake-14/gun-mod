@@ -1,6 +1,6 @@
 {
   "model": {
     "type" : "minecraft:model",
-    "model": "gunmod:item/<pink_garnet>"
+    "model": "gunmod:item/pink_garnet"
   }
 }
